@@ -1,0 +1,19 @@
+#!/usr/bin/bash
+#belajar bahasa pemrograman memanglah epik tapi
+#pernah gk sih lo bikin program pake bahasa indonesia
+shopt -s expand_aliases
+. ./kamus.sh
+cetakf '+------------installing-------------+\n'
+cetakf 'make dir         .....'
+buat-folder bin
+cetakf '[sukses]\n'
+cetakf 'compile shc      .....'
+clang src/shc.c -o bin/shc
+cetakf '[sukses]\n'
+cetakf 'change permision .....'
+izin +x bin/*
+cetakf '[sukses]\n'
+cetakf 'remove cache     .....'
+hapus -rf src install
+cetakf '[sukses]\n'
+cetakf '+--------------done-----------------+\n'
